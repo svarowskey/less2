@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300i,400|Merriweather:400,700');
+
+body {
+    font-family: Lato, sans-serif;
+}
+
+.navbar.navbar-default {
+    margin-bottom: 0;
+    border-radius: 0;
+    border: none;
+    background: #fff;
+}
+
+.navbar.navbar-default .navbar-brand {
+    position: relative;
+    bottom: 2px;
+}
+
+.slider {
+    position: relative;
+}
+
+.callBackFormWrap {
+    height: 45%;
+    width: 300px;
+    background: rgba(0, 0, 0, .5);
+    position: absolute;
+    right: 15%;
+    top: 30%;
+    border-radius: 5px;
+}
+
+.callBackFormWrap form {
+    padding: 30px;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .callBackFormWrap {
+        height: 55%;
+        top: 25%;
+    }
+}
+
+.callBackFormWrap label {
+    color: #fff;
+    font-weight: 400;
+}
+
+.callBackFormWrap label,
+.callBackFormWrap input {
+    display: block;
+    width: 100%;
+}
+
+.callBackFormWrap input[type="text"] {
+    margin-bottom: 20px;
+    outline: none;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    border-bottom: 2px solid #fff;
+}
+
+.callBackFormWrap input[type="text"]:focus {
+    border-bottom: 2px solid #8aff84;
+}
+
+.callBackFormWrap input[type="submit"] {
+    color: #fff;
+    border: 1px solid #fff;
+    background: none;
+    padding: 20px;
+}
+
+.mobileFormWrap {
+    height: 200px;
+    background: #c7c7c7;
+    clear: both;
+}
+
+@media (max-width: 479px) {
+    .mobileFormWrap {
+        height: 300px;
+    }
+}
+
+.mobileFormInsideWrap {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobileFormInsideWrap form > div {
+    float: left;
+    height: 80px;
+    margin: 0 5px;
+}
+
+@media (max-width: 479px) {
+    .mobileFormInsideWrap form > div {
+        float: none;
+        height: auto;
+    }
+}
+
+.mobileFormWrap input[type="text"] {
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 2px solid #e2e2e2;
+    background: none;
+}
+
+.mobileFormWrap input[type="text"]:focus {
+    border-bottom: 2px solid #8aff84;
+    outline: none;
+}
+
+.mobileFormWrap label {
+    color: #8a8a8a;
+    font-size: 2rem;
+}
+
+.mobileFormWrap input[type="submit"] {
+    color: #8a8a8a;
+    border: 2px solid #e2e2e2;
+    background: none;
+    padding: 17px;
+}
+
+.ourServicesHead {
+    padding: 100px 0;
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+}
+
+.serviceUnit {
+    border: 1px solid #000;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+@media (min-width: 480px) and (max-width: 767px){
+    .serviceCol {
+        width: 50%;
+        float: left;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .serviceCol:nth-child(-n+2) {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .serviceCol:nth-child(-n+3) {
+        margin-bottom: 20px;
+    }
+}
+
+.serviceName {
+    font-family: 'Merriweather', serif;
+    margin: 10px;
+    font-size: 2rem;
+}
+
+.serviceDesc {
+    font-family: Lato, sans-serif;
+    color: #8a8a8a;
+    margin: 10px;
+    text-align: justify;
+}
+
+.moreBtnWrap a {
+    border-top: 1px solid #000;
+    background: #f5f5f5;
+    color: #8e8e8e;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 7px 25px;
+    display: block;
+}
+
+.moreBtnWrap a:hover {
+    text-decoration: none;
+    color: #e67c00;
+}
+
+.serviceImg img {
+    width: 100%;
+}
+
+.serviceReviewsHeader {
+    padding: 100px 0;
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    margin: 0;
+}
+
+.reviewUnitWrap {
+    margin-bottom: 30px;
+}
+
+.review {
+    border-radius: 5px;
+    border: 1px solid #000;
+    overflow: hidden;
+}
+
+.reviewImgWrap img {
+    width: 100%;
+}
+
+.reviewAuthor {
+    font-size: 2rem;
+    font-family: 'Merriweather', serif;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.reviewAuthorPosition {
+    font-family: Lato, sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    color: #8a8a8a;
+    font-size: .7em;
+}
+
+.reviewAuthorSocials {
+    text-align: center;
+    font-size: 3.5em;
+    letter-spacing: 10px;
+}
+
+.reviewAuthorSocials i {
+    color: #8a8a8a;
+}
+
+.reviewAuthorSocials .fa-twitter:hover {
+    color: #37c9dd;
+    cursor: pointer;
+}
+
+.reviewAuthorSocials .fa-facebook-official:hover {
+    color: #142add;
+    cursor: pointer;
+}
+
+.reviewAuthorSocials .fa-github:hover {
+    color: #000;
+    cursor: pointer;
+}
+
+.reviewAuthorSocials .fa-vk:hover {
+    color: #277edd;
+    cursor: pointer;
+}
+
+.reviewServiceName {
+    font-size: 3rem;
+}
+
+.reviewPost {
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+.reviewIndexes {
+    margin-top: 15px;
+    font-family: Merriweather, serif;
+    font-weight: 700;
+    font-size: 1.9rem;
+}
+
+.reviewIndexes .progress {
+    height: 8px;
+}
+
+.reviewIndexes .progress-bar {
+    background-color: #8a8a8a;
+}
+
+.helpful {
+    font-size: 2rem;
+}
+
+.helpful span {
+    cursor: pointer;
+    position: relative;
+    top: 4px;
+}
+
+.helpful .glyphicon-thumbs-up {
+    color: #e67c00;
+}
+
+.helpful .glyphicon-thumbs-down {
+    color: #626262;
+}
+
+.officesWrap {
+    background: url("../images/offices.jpg") no-repeat center center, rgba(255, 255, 255, .8);
+    background-size: cover;
+    background-blend-mode: overlay;
+    padding-bottom: 100px;
+}
+
+.ourOfficesHeader {
+    font-family: Merriweather, serif;
+    font-weight: 700;
+    font-size: 36px;
+    margin: 100px 0;
+    text-align: center;
+}
+
+.addresses {
+    overflow: hidden;
+}
+
+address {
+    color: #8a8a8a;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.addressData {
+    padding: 15px;
+    background: #fff;
+}
+
+address button {
+    width: 100%;
+    padding: 10px 15px;
+    background: #f5f5f5;
+    border: none;
+    border-top: 1px solid #e2e2e2;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: #333;
+    text-align: left;
+}
+
+address button:hover {
+    color: #e67c00;
+}
+
+address img {
+    width: 100%;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+    .addressCol {
+        width: 50%;
+        float: left;
+    }
+    .addressCol:last-child {
+        width: 100%;
+    }
+}
+
+footer {
+    background: #252a31;
+    color: #fff;
+    padding: 25px 15px;
+}
